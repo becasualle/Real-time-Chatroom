@@ -60,6 +60,26 @@
           </form>
 
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB-C9vEbGpxX_iJX-HJiKz0qfsAZ8pC9tU",
+            authDomain: "udemy-modern-js-63bad.firebaseapp.com",
+            projectId: "udemy-modern-js-63bad",
+            storageBucket: "udemy-modern-js-63bad.appspot.com",
+            messagingSenderId: "659133135496",
+            appId: "1:659133135496:web:446a464cae730e4425fd3d",
+            measurementId: "G-B523XC7CF7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();   
+    </script>
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/app.js"></script>
