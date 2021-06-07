@@ -51,21 +51,3 @@ class Chatroom {
     }
 
 }
-
-const chatroom = new Chatroom('general', 'shaun');
-
-// chatroom.addChat('whats up guys')
-//     .then(() => console.log('chat added'))
-//     .catch(err => console.log(err));
-chatroom.getChats((data) => {
-    console.log(data);
-})
-
-setTimeout(() => {
-    chatroom.updateRoom('gaming');
-    chatroom.updateName('yoshhi');
-    chatroom.getChats((data) => {
-    console.log(data);
-    });
-    chatroom.addChat('hello');
-}, 3000)
